@@ -1,0 +1,23 @@
+Create a complete weather web app using HTML, CSS, and JavaScript with the following features and design:
+Design/Layout:
+Inspired by the Apple Weather app: a full-screen gradient background with a translucent, blurred central panel.
+Show the user’s location at the top, followed by the current date.
+Display a large, prominent temperature reading in Celsius in the center.  
+Show a weather description below the temperature.
+Include additional weather details below that, such as humidity, wind speed, and pressure, arranged neatly in a row.
+Include a text input field and a button below for the user to manually enter a city and country to fetch weather data.
+Use clean, modern, sans-serif fonts and a mobile-responsive design.
+Functionality:
+On page load, use the browser’s Geolocation API to get the user’s current coordinates (latitude and longitude).
+Use the Open-Meteo API to fetch current weather data for those coordinates.
+Convert Open-Meteo weather codes into human-readable descriptions.
+Reverse geocode the coordinates into a readable location name (city, state, or country) using OpenStreetMap’s Nominatim API.
+Display temperature, weather description, humidity, wind speed, and pressure on the page.
+If the user denies location access or geolocation is not supported, prompt the user to enter their city and country manually.
+When the user enters a city and country and clicks the button, forward geocode the input using Nominatim API to get coordinates and then fetch weather data from Open-Meteo.
+Show appropriate error messages if the location is not found or if the API requests fail.
+Technical:
+Use only vanilla HTML, CSS, and JavaScript (no frameworks).
+Make API requests with fetch() and handle asynchronous calls properly with async/await.
+Add smooth and clear error handling for user input and API failures.
+The entire app should run client-side and use only free public APIs.

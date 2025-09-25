@@ -5,23 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Around Me</title>
 
-    <!-- Css stuff here -->
+    <!-- CSS stuff  -->
     <link rel="stylesheet" href="style.css" />
 
     <!-- Font Awesome CDN (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <!-- Js stuff put here -->
+    <!-- JavaScript -->
     <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="input-group">
             <input type="text" id="userLocation" placeholder="Search for places ...">
-            <select class ="converter" id ="converter">
-            <option>Celsius</option>
-            <option>Fahrenheit</option> 
+            <select class="converter" id="converter">
+                <option>Celsius</option>
+                <option>Fahrenheit</option> 
+            </select>
+
+            <i class="fa fa-search"></i>
         </div>
+        <div class="weatherIcon"></div>
+        <h2 class="temperature"></h2>
+        <div class="feelslike"></div>
+        <div class="description"></div>
+        <hr />
+        <div class="date"></div>
+        <div class="city"></div>
     </div>
 </body>
 </html>
+
